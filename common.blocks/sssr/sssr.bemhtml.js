@@ -1,0 +1,1 @@
+block('sssr').addJs()(true);

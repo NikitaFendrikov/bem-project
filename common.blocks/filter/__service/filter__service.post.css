@@ -1,0 +1,14 @@
+:block(filter):elem(service)
+{
+    padding-right: 25px;
+    @media (max-width: 767px)
+    {
+        float: left;
+
+        padding: 10px 4px 0;
+    }
+    @media (max-width: 479px)
+    {
+        display: none;
+    }
+}

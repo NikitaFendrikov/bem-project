@@ -1,0 +1,62 @@
+:block(menu):elem(item):mod(theme tags)
+{
+    font-size: 14px;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 3px 11px;
+
+    cursor: pointer;
+    transition: none;
+    text-decoration: none;
+    text-transform: lowercase;
+
+    color: #0072ff;
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    background: #e5f1ff;
+
+    &:block(menu):elem(item):mod(theme tags):before
+    {
+        content: '# ';
+
+        opacity: .5;
+    }
+
+    &:block(menu):elem(item):mod(checked)
+    {
+        color: #fff;
+        background: #0072ff;
+
+        &:before
+        {
+            content: '● ';
+
+            opacity: 1;
+        }
+    }
+
+    &:block(menu):elem(item):mod(hovered)
+    {
+        color: #fff;
+        background: #d42428;
+
+        &:before
+        {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
